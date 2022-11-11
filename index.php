@@ -1,5 +1,24 @@
 <?php
 echo("hello Neha");
+
+
+
+$telegram_apikey = 'bot5504235663:AAFxQofyfAZ1HcxohmebJvYNBV6HLfm8XRg';
+$telegram_chatid =1928052191;
+
+$message=
+urlencode("🔖\n<b>𝗡𝗜𝗙𝗧𝗬 𝟮𝟵 𝗗𝗘𝗖 𝟭𝟳𝟱𝟬𝟬 𝗣𝗘</b> \n\n 𝗣𝗥𝗜𝗖𝗘 = 𝟮𝟬𝟬.𝟬𝟬   𝗟𝗧𝗣 = 𝟱𝟬𝟬.𝟬𝟬\n\n𝗤𝗨𝗔𝗡𝗧𝗜𝗧𝗬 = 𝟮𝟬𝟬   𝗣/𝗟 = 𝟭0𝟬𝟬𝟬.𝟬𝟬\n\n\n");
+
+
+$url = "https://api.telegram.org/$telegram_apikey/sendMessage?chat_id=$telegram_chatid&parse_mode=html&text=$message";
+$result = file_get_contents($url);
+echo($result);
+
+
+
+
+
+
 $name = 
   $_GET['name'] ?: 'World';
 
