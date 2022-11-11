@@ -1,6 +1,7 @@
 <?php
-
-$name = $_GET['name'] ?: 'World';
+echo("hello Neha");
+$name = 
+  $_GET['name'] ?: 'World';
 
 ?><!doctype html>
 <html lang="en">
